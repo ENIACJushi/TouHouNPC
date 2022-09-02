@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "thnpc:thnpc_th6",
+      "materials": { "default": "bee" },
+      "textures": {
+        "hakurei_reimu": "textures/entity/hakurei_reimu.png",
+        "hakurei_reimu_2": "textures/entity/hakurei_reimu_2.png",
+        "kirisame_marisa": "textures/entity/kirisame_marisa.png",
+        "rumia": "textures/entity/rumia.png",
+        "daiyousei": "textures/entity/daiyousei.png",
+        "cirno": "textures/entity/cirno.png",
+        "hong_meiling": "textures/entity/hong_meiling.png",
+        "koakuma": "textures/entity/koakuma.png",
+        "patchouli_knowledge": "textures/entity/patchouli_knowledge.png",
+        "izayoi_sakuya": "textures/entity/izayoi_sakuya.png",
+        "remilia_scarlet": "textures/entity/remilia_scarlet.png",
+        "flandre_scarlet": "textures/entity/flandre_scarlet.png"
+      },
+      "geometry": {
+        "hakurei_reimu": "geometry.thnpc.hakurei_reimu",
+        "kirisame_marisa": "geometry.thnpc.kirisame_marisa",
+        "rumia": "geometry.thnpc.rumia",
+        "daiyousei": "geometry.thnpc.daiyousei",
+        "cirno": "geometry.thnpc.cirno",
+        "hong_meiling": "geometry.thnpc.hong_meiling",
+        "koakuma": "geometry.thnpc.koakuma",
+        "patchouli_knowledge": "geometry.thnpc.patchouli_knowledge",
+        "izayoi_sakuya": "geometry.thnpc.izayoi_sakuya",
+        "remilia_scarlet": "geometry.thnpc.remilia_scarlet",
+        "flandre_scarlet": "geometry.thnpc.flandre_scarlet"
+      },
+      "animations": {
+        "blink": "animation.thnpc.blink",
+        "look_at_target": "animation.common.look_at_target",
+        "blink_controller": "controller.animation.thnpc.blink"
+      },
+      "scripts": {
+        "animate": [
+          "blink_controller",
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.thnpc_th6" ],
+      "spawn_egg": {
+        "texture": "npc_maid_tool",
+        "texture_index": 0
+      }
+    }
+  }
+}

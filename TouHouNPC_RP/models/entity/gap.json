@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"geometry.thnpc.gap": {
+		"texturewidth": 19,
+		"textureheight": 34,
+		"visible_bounds_width": 4,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, -2, 0]
+			},
+			{
+				"name": "bone1",
+				"parent": "body",
+				"pivot": [-0.5, 15, 11],
+				"rotation": [-5, 25, 25],
+				"cubes": [
+					{"origin": [-2.36639, -3.95133, 1.75827], "size": [16, 34, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

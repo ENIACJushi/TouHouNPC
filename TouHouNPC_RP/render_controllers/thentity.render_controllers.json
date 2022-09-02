@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+		"controller.render.gap": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default"
+					]
+				},
+				"geometries": {
+					"Array.geos": [
+						"Geometry.default"
+					]
+				}
+			},
+			"geometry": "Array.geos[query.variant]",
+			"part_visibility": [
+				{
+					"*": true,
+					"head": true,
+					"nose": true,
+					"body": true,
+					"arms": true,
+					"leg0": true,
+					"leg1": true
+				}
+			],
+			"materials": [ { "*": "Material.default" } ],
+			"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}

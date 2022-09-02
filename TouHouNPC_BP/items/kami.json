@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "thnpc:kami"
+    },
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:allow_off_hand": true
+    }
+  }
+}

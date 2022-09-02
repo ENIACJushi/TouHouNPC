@@ -1,0 +1,9 @@
+{
+	"resource_pack_name": "thnpc",
+	"texture_name": "atlas.items",
+  "texture_data": {
+    "kami": { "textures": "textures/items/kami" },
+    "npc_maid_tool": { "textures": "textures/items/npc_maid_tool" },
+    "gap": { "textures": "textures/items/gap" }
+  }
+}

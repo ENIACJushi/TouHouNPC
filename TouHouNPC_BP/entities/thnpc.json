@@ -1,0 +1,325 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "thnpc:thnpc",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "destroy": {
+        "minecraft:transformation": {
+          "into": "minecraft:area_effect_cloud"
+        }
+      },
+      "blink": {
+        "minecraft:is_baby": {},
+        "minecraft:ageable": {
+          "duration": 0.3,
+          "grow_up": {
+            "event": "blinkover",
+            "target": "self"
+          }
+        }
+      },
+      "blinkover": {
+        "minecraft:ageable": {
+          "duration": 5,
+          "grow_up": {
+            "event": "blink",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:home": {
+      },
+      "minecraft:behavior.go_home": {
+        "priority": 1,
+        "speed_multiplier": 1.0,
+        "interval": 1,
+        "goal_radius": 1.0,
+        "on_home": {
+
+        }
+      },
+      "minecraft:teleport": {
+        "dark_teleport_chance": 0,
+        "light_teleport_chance": 0,
+        "max_random_teleport_time": 20,
+        "min_random_teleport_time": 0,
+        "random_teleport_cube": [ 32, 16, 32 ],
+        "random_teleports": false,
+        "target_distance": 16,
+        "target_teleport_chance": 1
+      },
+      "minecraft:navigation.fly": {
+        "avoid_damage_blocks": false,
+        "avoid_portals": false,
+        "avoid_sun": false,
+        "avoid_water": false,
+        "blocks_to_avoid": [],
+        "can_breach": true,
+        "can_break_doors": false,
+        "can_jump": true,
+        "can_open_doors": true,
+        "can_open_iron_doors": true,
+        "can_pass_doors": true,
+        "can_path_from_air": true,
+        "can_path_over_lava": true,
+        "can_path_over_water": true,
+        "can_sink": true,
+        "can_swim": true,
+        "can_walk": true,
+        "can_walk_in_lava": true,
+        "is_amphibious": false
+      },
+      "minecraft:movement.fly": {
+        "max_turn": 30.0
+      },
+      "minecraft:can_fly": {
+      },
+      "minecraft:movement.amphibious": {
+        "max_turn": 30.0
+      },
+      "minecraft:interact": {
+        "interactions": [
+          // destroy
+          {
+            "use_item": false,
+            "add_items": { "table": "loot_tables/entities/music_stand.json" },
+            "on_interact": {
+              "event": "destroy",
+              "target": "self",
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "thnpc:kami"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:type_family": {
+        "family": [ "npc", "mob" ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 0,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:npc": {
+        "npc_data": {
+          "portrait_offsets": {
+            "translate": [ -7, 50, 0 ],
+            "scale": [ 1.75, 1.75, 1.75 ]
+          },
+          "picker_offsets": {
+            "translate": [ 0, 20, 0 ],
+            "scale": [ 1.7, 1.7, 1.7 ]
+          },
+          "skin_list": [
+            { "variant": 0 },
+            { "variant": 1 },
+            { "variant": 2 },
+            { "variant": 3 },
+            { "variant": 4 },
+            { "variant": 5 },
+            { "variant": 6 },
+            { "variant": 7 },
+            { "variant": 8 },
+            { "variant": 9 },
+            { "variant": 10 },
+            { "variant": 11 },
+            { "variant": 12 },
+            { "variant": 13 },
+            { "variant": 14 },
+            { "variant": 15 },
+            { "variant": 16 },
+            { "variant": 17 },
+            { "variant": 18 },
+            { "variant": 19 },
+            { "variant": 20 },
+            { "variant": 21 },
+            { "variant": 22 },
+            { "variant": 23 },
+            { "variant": 24 },
+            { "variant": 25 },
+            { "variant": 26 },
+            { "variant": 27 },
+            { "variant": 28 },
+            { "variant": 29 },
+            { "variant": 30 },
+            { "variant": 31 },
+            { "variant": 32 },
+            { "variant": 33 },
+            { "variant": 34 },
+            { "variant": 35 },
+            { "variant": 36 },
+            { "variant": 37 },
+            { "variant": 38 },
+            { "variant": 39 },
+            { "variant": 40 },
+            { "variant": 41 },
+            { "variant": 42 },
+            { "variant": 43 },
+            { "variant": 44 },
+            { "variant": 45 },
+            { "variant": 46 },
+            { "variant": 47 },
+            { "variant": 48 },
+            { "variant": 49 },
+            { "variant": 50 },
+            { "variant": 51 },
+            { "variant": 52 },
+            { "variant": 53 },
+            { "variant": 54 },
+            { "variant": 55 },
+            { "variant": 56 },
+            { "variant": 57 },
+            { "variant": 58 },
+            { "variant": 59 },
+            { "variant": 60 },
+            { "variant": 61 },
+            { "variant": 62 },
+            { "variant": 63 },
+            { "variant": 64 },
+            { "variant": 65 },
+            { "variant": 66 },
+            { "variant": 67 },
+            { "variant": 68 },
+            { "variant": 69 },
+            { "variant": 70 },
+            { "variant": 71 },
+            { "variant": 72 },
+            { "variant": 73 },
+            { "variant": 74 },
+            { "variant": 75 },
+            { "variant": 76 },
+            { "variant": 77 },
+            { "variant": 78 },
+            { "variant": 79 },
+            { "variant": 80 },
+            { "variant": 81 },
+            { "variant": 82 },
+            { "variant": 83 },
+            { "variant": 84 },
+            { "variant": 85 },
+            { "variant": 86 },
+            { "variant": 87 },
+            { "variant": 88 },
+            { "variant": 89 },
+            { "variant": 90 },
+            { "variant": 91 },
+            { "variant": 92 },
+            { "variant": 93 },
+            { "variant": 94 },
+            { "variant": 95 },
+            { "variant": 96 },
+            { "variant": 97 },
+            { "variant": 98 },
+            { "variant": 99 },
+            { "variant": 100 },
+            { "variant": 101 },
+            { "variant": 102 },
+            { "variant": 103 },
+            { "variant": 104 },
+            { "variant": 105 },
+            { "variant": 106 },
+            { "variant": 107 },
+            { "variant": 108 },
+            { "variant": 109 },
+            { "variant": 110 },
+            { "variant": 111 },
+            { "variant": 112 },
+            { "variant": 113 },
+            { "variant": 114 },
+            { "variant": 115 },
+            { "variant": 116 },
+            { "variant": 117 },
+            { "variant": 118 },
+            { "variant": 119 },
+            { "variant": 120 },
+            { "variant": 121 }
+          ]
+        }
+      },
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+    "events": {
+      "destroy": {
+        "add": {
+          "component_groups": [ "destroy" ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "blinkover"
+          ]
+        }
+      },
+      "blink": {
+        "remove": {
+          "component_groups": [
+            "blinkover"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "blink"
+          ]
+        }
+      },
+      "blinkover": {
+        "remove": {
+          "component_groups": [
+            "blink"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "blinkover"
+          ]
+        }
+      }
+    }
+  }
+}

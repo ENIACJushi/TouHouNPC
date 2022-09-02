@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "thnpc:gap",
+      "materials": {
+        "default": "bee"
+      },
+      "textures": {
+        "default": "textures/entity/gap.png"
+      },
+      "geometry": {
+        "default": "geometry.thnpc.gap"
+      },
+      "render_controllers": [ "controller.render.gap" ],
+      "spawn_egg": {
+        "texture": "gap",
+        "texture_index": 0
+      }
+    }
+  }
+}

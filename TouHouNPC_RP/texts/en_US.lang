@@ -1,0 +1,13 @@
+
+item.wheat:kami.name=kami
+
+item.spawn_egg.entity.thnpc:gap.name=gap
+entity.thnpc:gap.name=gap
+
+item.spawn_egg.entity.thnpc:thnpc.name=spawn THNPC(ALL)
+entity.thnpc:thnpc.name=spawn THNPC(全部)
+item.spawn_egg.entity.thnpc:thnpc_th6.name=spawn THNPC(TH06)
+entity.thnpc:thnpc_th6.name=spawn THNPC(TH06)
+
+item.wheat:music_trumpet_0.name=ボーダーオブライフ
+item.wheat:music_accordion_0.name=最も澄みわたる空と海

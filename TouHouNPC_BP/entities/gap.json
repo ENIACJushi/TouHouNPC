@@ -1,0 +1,136 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "thnpc:gap",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "destroy": {
+        "minecraft:transformation": {
+          "into": "minecraft:area_effect_cloud"
+        }
+      }
+    },
+    "components": {
+      "minecraft:home": {
+      },
+      "minecraft:behavior.go_home": {
+        "priority": 1,
+        "speed_multiplier": 1.0,
+        "interval": 1,
+        "goal_radius": 1.0,
+        "on_home": {
+
+        }
+      },
+      "minecraft:navigation.fly": {
+        "avoid_damage_blocks": false,
+        "avoid_portals": false,
+        "avoid_sun": false,
+        "avoid_water": false,
+        "blocks_to_avoid": [],
+        "can_breach": true,
+        "can_break_doors": false,
+        "can_jump": true,
+        "can_open_doors": true,
+        "can_open_iron_doors": true,
+        "can_pass_doors": true,
+        "can_path_from_air": true,
+        "can_path_over_lava": true,
+        "can_path_over_water": true,
+        "can_sink": true,
+        "can_swim": true,
+        "can_walk": true,
+        "can_walk_in_lava": true,
+        "is_amphibious": false
+      },
+      "minecraft:movement.fly": {
+        "max_turn": 30.0
+      },
+      "minecraft:can_fly": {
+      },
+      "minecraft:interact": {
+        "interactions": [
+          // destroy
+          {
+            "use_item": false,
+            "add_items": { "table": "loot_tables/entities/music_stand.json" },
+            "on_interact": {
+              "event": "destroy",
+              "target": "self",
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "thnpc:kami"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:type_family": {
+        "family": [ "npc", "mob" ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:npc": {
+        "npc_data": {
+          "portrait_offsets": {
+            "translate": [ -7, 50, 0 ],
+            "scale": [ 1.75, 1.75, 1.75 ]
+          },
+          "picker_offsets": {
+            "translate": [ 0, 20, 0 ],
+            "scale": [ 1.7, 1.7, 1.7 ]
+          },
+          "skin_list": [
+            { "variant": 0 }
+          ]
+        }
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+    "events": {
+      "destroy": {
+        "add": {
+          "component_groups": [ "destroy" ]
+        }
+      }
+    }
+  }
+}

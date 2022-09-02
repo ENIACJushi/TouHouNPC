@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "TouHou NPC",
+    "description": "Author: CometWind \nModels from: Touhou little maid.",
+    "uuid": "a94d44f3-795f-47c4-9d1d-d14c26396386",
+    "version": [ 1, 1, 0 ],
+    "min_engine_version": [ 1, 16, 0 ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "2168c6e2-418e-4009-9df9-0862191fbc95",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "d76ca8c7-aad0-479a-8d6a-b6995fc139f2",
+      "version": [ 1, 1, 0 ]
+    }
+  ]
+}
