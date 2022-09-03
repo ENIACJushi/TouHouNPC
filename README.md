@@ -1,5 +1,6 @@
 # TouHouNPC
 
+##### English | [简体中文](README_zh-cn.md)
 
 ## Tutorial
 **Step 1: Get a spawn egg**
