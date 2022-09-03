@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "TouHou NPC",
-    "description": "Author: CometWind \nModels from: Touhou little maid.",
+    "description": "Author: CometWind (ENIAC_Jushi) \nModels from: Touhou little maid.",
     "uuid": "a94d44f3-795f-47c4-9d1d-d14c26396386",
     "version": [ 1, 1, 0 ],
     "min_engine_version": [ 1, 16, 0 ]
