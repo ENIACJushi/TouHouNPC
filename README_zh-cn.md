@@ -37,8 +37,9 @@
  4) 在基岩版正常显示的模型（这花费了很长时间）。
  
 ## 版权相关
+  Code：MIT Assets: CC BY-NC-SA 4.0
   
   模型来自于：TouHou Little Maid (CC协议) - https://github.com/TartaricAcid/TouhouLittleMaid
   进行轻微更改以在基岩版正常显示。
-  本add-on的代码部分使用MIT协议开源，模型部分使用CC协议。
   
+  东方project: ZUN.
