@@ -1,5 +1,6 @@
 # 车万NPC
 
+##### [English](README.md) | 简体中文
 
 ## 使用指南
 **Step 1: 获取一个生成蛋**
