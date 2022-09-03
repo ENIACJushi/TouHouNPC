@@ -38,4 +38,7 @@
  
 ## 版权相关
   
-  模型来自于：TouHou Little Maid (MIT License) - https://github.com/TartaricAcid/TouhouLittleMaid
+  模型来自于：TouHou Little Maid (CC协议) - https://github.com/TartaricAcid/TouhouLittleMaid
+  进行轻微更改以在基岩版正常显示。
+  本add-on的代码部分使用MIT协议开源，模型部分使用CC协议。
+  
