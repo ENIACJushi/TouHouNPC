@@ -37,5 +37,11 @@
  4) Models that displayed normally in bedrock edition. (this took a long time)
  
 ## Copyright related
+  Code：MIT
+  Assets: CC BY-NC-SA 4.0
   
-  Modules from: TouHou Little Maid (MIT License) - https://github.com/TartaricAcid/TouhouLittleMaid
+  Modules from: TouHou Little Maid (CC) - https://github.com/TartaricAcid/TouhouLittleMaid
+  Make minor changes to display properly in the bedrock version.
+
+  Touhou Project：Made by ZUN.
+  
